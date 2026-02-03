@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font: 13pt "Roboto";
+}
+
+body {
+    padding-top: 20px;
+    background-color: rgb(230, 230, 230);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 820px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 24pt;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18pt;
+    font-weight: 600;
+    padding: 15px;
+    background-color: rgb(255, 244, 205);
+    box-shadow: 0 5px 0 0 rgb(255, 227, 156);
+}
+
+#guide {
+    background-color: rgb(217, 242, 255);
+    box-shadow: 0 5px 0 0 rgb(190, 222, 239);
+}
+
+h3 {
+    font-size: 15pt;
+    font-weight: 600;
+}
+
+input,
+textarea,
+button {
+    display: block;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+textarea {
+    height: 240px;
+    resize: vertical;
+}
+
+button {
+    font-weight: 600;
+    font-size: 15pt;
+    padding: 15px;
+}
+
+ul,
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-position: inside;
+}
+
+ol span {
+    font-weight: 600;
+}
+
+#compile-btn {
+    background: rgb(228, 145, 28);
+    color: white;
+    border: none;
+    box-shadow: 0 5px 0 0 rgb(173, 110, 22);
+}
+
+#compile-btn:hover {
+    background: rgb(203, 129, 25);
+}
+
+#compile-btn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.art-block,
+.news-block,
+.quote-block,
+.question-block,
+.anecdote-block,
+.interview-block {
+    background-color: rgb(255, 244, 205);
+    border: 5px solid rgb(255, 244, 205);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.news-text-block,
+.anecdote-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#result {
+    height: 600px;
+}
+
+.wrapper-link {
+    color: blue;
+    font-weight: 600;
+    font-size: 18pt;
+    text-align: center;
+}

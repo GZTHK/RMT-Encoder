@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Конвертер | GZTHK</title>
+</head>
+
+<body>
+
+    <div class="wrapper" id="wrapper">
+        <h1>Конвертер выпуска газеты</h1>
+
+        <a href="guide.html" class="wrapper-link">[Гайд]</a>
+
+        <h2>Название новости
+            <input id="adminpanel" placeholder="«RuMine Times»: n-ый выпуск i-ого сезона от 14 марта 2006">
+        </h2>
+
+        <h2>Превью
+            <input id="preview-title" value="«RuMine Times»">
+            <input id="preview-subtitle" placeholder="N-ый выпуск n-ого сезона от 14 марта 2006">
+        </h2>
+
+        <h2>Приветствие</h2>
+        <h3>Краткая:</h3>
+        <textarea id="intro-text-short"></textarea>
+        <h3>Полная:</h3>
+        <textarea id="intro-text-full"></textarea>
+
+        <h2>Главные новости
+            <input id="main-news-subtitle" placeholder="За месяц N было написано n страниц">
+        </h2>
+        <div class="news-block">
+            <input class="news-h2" placeholder="От n месяца N">
+            <div class="news-text-block">
+                <input class="news-h3" placeholder="Название новости">
+                <textarea class="news-text"></textarea>
+            </div>
+            <button class="add-news-btn">Добавить новость в блок</button>
+        </div>
+        <button id="add-news-block-btn">Добавить блок новостей</button>
+
+        <h2>«Руминское искусство»</h2>
+        <div class="art-block">
+            <input class="art-link" placeholder="Ссылка на сообщение">
+            <input class="art-link-img" placeholder="Ссылка на изображение">
+            <input class="art-author" placeholder="Автор">
+            <input class="art-date" placeholder="Дата">
+        </div>
+        <button id="add-art-btn">Добавить блок с рисунком</button>
+
+        <h2>«У камина с Румине»
+            <input id="painting-subtitle" placeholder="«Название», Автор">
+        </h2>
+        <input id="painting-link-img" placeholder="Ссылка на изображение">
+        <textarea id="painting-text"></textarea>
+
+        <h2>«Микрофон Включен»</h2>
+        <div class="interview-block">
+            <input class="interview-subtitle" placeholder="Пользователь (только никнейм)">
+            <input class="interview-date" placeholder="Дата">
+            <textarea class="interview-text"></textarea>
+        </div>
+        <button id="add-interview-btn">Добавить интервью</button>
+
+        <h2>Интересные цитаты известных пользователей</h2>
+        <div class="quote-block">
+            <textarea class="quote-text"></textarea>
+            <input class="quote-link-avatar" placeholder="Ссылка на аватар пользователя">
+            <input class="quote-author" placeholder="Автор">
+        </div>
+        <button id="add-quote-btn">Добавить цитату</button>
+
+        <h2>Игры</h2>
+        <h3>Загадки</h3>
+        <div class="question-block">
+            <input class="question-text" placeholder="Вопрос">
+            <input class="question-answer" placeholder="Ответ">
+        </div>
+        <button id="add-question-btn">Добавить вопрос</button>
+
+        <h2>Анекдоты</h2>
+        <div class="anecdote-block">
+            <input class="anecdote-author" placeholder="Автор">
+            <div class="anecdote-text-block">
+                <input class="anecdote-name" placeholder="Название анекдота">
+                <textarea class="anecdote-text"></textarea>
+            </div>
+            <button class="add-anecdote-btn">Добавить анекдот</button>
+        </div>
+        <button id="add-anecdote-block-btn">Добавить анекдоты от другого пользователя</button>
+
+        <h2>Немного о газете</h2>
+        <textarea id="end-text"></textarea>
+        <h3>Над газетой работали:</h3>
+        <input class="newspaper-author" placeholder="Пользователь N — отличный пользователь.">
+        <button id="add-newspaper-author-btn">Добавить редактора</button>
+
+        <button id="compile-btn">Конвертировать</button>
+
+        <h3>Краткая:</h3>
+        <textarea id="result-short"></textarea>
+        <h3>Полная:</h3>
+        <textarea id="result-full"></textarea>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

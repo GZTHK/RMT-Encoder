@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Конвертер | GZTHK</title>
+</head>
+
+<body>
+
+    <div class="wrapper" id="wrapper">
+        <h1>Гайд</h1>
+
+        <a href="index.html" class="wrapper-link">[Конвертер]</a>
+
+        <h3>Цитата:</h3>
+        <ol>
+            <li><span>@q</span> — открывающий тег цитаты.</li>
+            <li><span>@avatar | Никнейм | https://…</span> — никнейм и ссылка на аватар автора.</li>
+            <li><span>@qend</span> — закрывающий тег цитаты.</li>
+        </ol>
+        <h3>Интервью:</h3>
+        <ol>
+            <li><span>@i ...</span> — тег интервьюэра.</li>
+            <li><span>@p ...</span> — тег респондента.</li>
+            <li><span>@center ...</span> — чтобы вставить какой-либо элемент по центру (текст будет жирным).</li>
+            <li>Ники пользователей в интервью указывать не нужно, только теги и текст после них.</li>
+        </ol>
+        <h3>Изображения:</h3>
+        <ol>
+            <li><span>&lt;img src="https://…" /&gt;</span> — если нужно вставить картинку.</li>
+            <li><span>&lt;img src="https://…" class="rtRageFace" /&gt;</span> — если нужно вставить рейдж-фейс, которого нет на Румайне.</li>
+            <li>Если нужно вставить картинку со смещением вправо, загрузи её в админпанели и вставь превью(thumb)-версию, скопируй и вставь <span>в отдельной строке</span>. Также нужно вставить <span>@clear</span> в отдельной строке в самом конце новости (или перед цитатой, если она есть).</li>
+        </ol>
+        <h3>Общие:</h3>
+        <ol>
+            <li><span>Не переноси строки просто так</span>. Каждая новая строка оборачивается в тег абзаца, даже если там ничего нет, что вызовет ненужный(?) отступ.</li>
+            <li>В блоке «Над газетой работали» ник пользователя и его описание <span>нужно разделять длинным тире c пробелами ( — ).</span></li>
+            <li>«Название новости» <span>должно точно совпадать</span> с названием, вписанным на Румайне. Это нужно для корректной работы изображений.</li>
+            <li>В админпанели убери галочку с пункта <span>«Автоматический перенос строк»</span>.</li>
+        </ol>
+
+        <h3>Пример новости с цитатой и картинкой:</h3>
+        <textarea>[thumb]https://…[/thumb]
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, suscipit!
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, dolores praesentium eveniet dolorem architecto libero ex iure ullam accusamus ab ipsum velit omnis possimus pariatur fuga eligendi illo minima ea.
+@clear
+@q
+— Ну, начнем! Как вас зовут, сколько вам лет?
+— Меня зовут Константин Чаплыгин, мне 43, я бизнесмен, есть трое детей
+@avatar | Demonas | https://ru-minecraft.ru/uploads/fotos/foto_224477.jpg
+@qend
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, sunt!</textarea>
+        <h3>Пример интервью:</h3>
+        <textarea>@i Привет!
+@p Здравствуй.
+Меня зовут Нойт.
+@i И правда.
+@p Действительно.</textarea>
+    </div>
+
+</body>
+
+</html>
