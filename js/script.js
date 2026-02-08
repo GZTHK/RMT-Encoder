@@ -1,3 +1,34 @@
+//Вставка тегов
+let activeTextarea = null;
+
+document.addEventListener('focusin', (e) => {
+    if (e.target.tagName === 'TEXTAREA') {
+        activeTextarea = e.target;
+    }
+});
+
+function insertTag(openTag, closeTag = '') {
+    if (!activeTextarea) return;
+
+    const textarea = activeTextarea;
+
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+
+    const value = textarea.value;
+
+    textarea.value =
+        value.slice(0, start) +
+        openTag +
+        value.slice(start, end) +
+        closeTag +
+        value.slice(end);
+
+    const cursorPos = start + openTag.length;
+    textarea.setSelectionRange(cursorPos, cursorPos);
+    textarea.focus();
+}
+
 // Кнопки для добавления новостей и анекдотов в блок
 document.addEventListener('click', (e) => {
     if (e.target.classList.contains('add-news-btn')) {
@@ -567,4 +598,5 @@ compileBtn.addEventListener('click', () => {
 
     document.getElementById('result-full').value = resultText + mobileNav + resultText2 + desktopNav;
     document.getElementById('result-short').value = short;
+
 });
