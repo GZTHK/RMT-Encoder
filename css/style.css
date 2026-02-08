@@ -5,19 +5,36 @@
 }
 
 body {
-    padding-top: 20px;
     background-color: rgb(230, 230, 230);
 }
 
-.wrapper {
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px 200px 20px 200px;
+}
+
+.wrapper,
+.wrapper-compile {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 820px;
     padding: 30px;
-    margin: auto;
     border-radius: 15px;
     background-color: #fff;
+    width: 50%;
+}
+
+.wrapper-compile {
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 40px);
+}
+
+#guide {
+    margin: auto;
+    width: 800px;
+    margin-top: 20px;
 }
 
 h1 {
@@ -37,7 +54,7 @@ h2 {
     box-shadow: 0 5px 0 0 rgb(255, 227, 156);
 }
 
-#guide {
+.wrapper-compile h2 {
     background-color: rgb(217, 242, 255);
     box-shadow: 0 5px 0 0 rgb(190, 222, 239);
 }
@@ -120,8 +137,8 @@ ol span {
     gap: 5px;
 }
 
-#result {
-    height: 600px;
+#result-full {
+    flex: 1;
 }
 
 .wrapper-link {
