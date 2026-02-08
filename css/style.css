@@ -130,3 +130,10 @@ ol span {
     font-size: 18pt;
     text-align: center;
 }
+
+.tag-btn-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tag-btn {}
