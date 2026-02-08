@@ -431,7 +431,7 @@ compileBtn.addEventListener('click', () => {
         const author = anecdoteBlock.querySelector('.anecdote-author').value.trim();
 
         resultText2 += `        <div class="rtBlock rtBlockBorder" id="jokes_${author}">\n`;
-        resultText2 += `            <p class="rtH2">${author}</p>\n`;
+        resultText2 += `            <p class="rtH2">От ${author}</p>\n`;
 
         const anecdotes = anecdoteBlock.querySelectorAll('.anecdote-text-block');
         anecdotes.forEach(anecdote => {
@@ -557,8 +557,8 @@ compileBtn.addEventListener('click', () => {
 
     // Вывод интервью в навигацию
     interviewUsers.forEach(user => {
-        desktopNav += `            <p class="rtNavSubLink"><a href="#interview_${user}">${user}</a></p>\n`;
-        mobileNav += `                <p class="rtNavSubLink"><a href="#interview_${user}">${user}</p>\n`;
+        desktopNav += `            <p class="rtNavSubLink"><a href="#interview_${user}">Интервью с ${user}</a></p>\n`;
+        mobileNav += `                <p class="rtNavSubLink"><a href="#interview_${user}">Интервью с ${user}</p>\n`;
     });
 
     desktopNav += `            <p class="rtNavLink"><a href="#quotes">Интересные цитаты</a></p>
@@ -600,3 +600,4 @@ compileBtn.addEventListener('click', () => {
     document.getElementById('result-short').value = short;
 
 });
+
